@@ -73,8 +73,8 @@ target/
 classes/
 deploy/
 javadoc/
-_data/
-_sql/
+data/
+sql/
 out/
 log/
 cache/

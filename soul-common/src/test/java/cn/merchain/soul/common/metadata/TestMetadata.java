@@ -1,6 +1,6 @@
 package cn.merchain.soul.common.metadata;
 
-import cn.merchain.soul.common.utils.DBUtil;
+import cn.merchain.soul.common.utils.db.DBUtil;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
