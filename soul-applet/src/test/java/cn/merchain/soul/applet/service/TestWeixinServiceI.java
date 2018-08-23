@@ -104,9 +104,9 @@ public class TestWeixinServiceI {
 
     @Test
     public void testAddChainByParam() {
-        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MzQ3ODY2NDAsInVzZXJuYW1lIjoib2VuVEQ1Tk9sWGNhUnZjTGtxVF9wellsT3MyZyIsIm9yZ05hbWUiOiJPcmcxIiwiaWF0IjoxNTM0NzUwNjQwfQ.wToVgdx4MJWL_QkMbGdvk4yhWIKW7PN59RhCky7vCPg";
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MzUwNzUzMDcsInVzZXJuYW1lIjoidGFvIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1MzUwMzkzMDd9.D3NM8XXn79cQM5LacoGTt5dTJtKvRsGqMwkO35sA56k";
         String chainArgs = "{\n" +
-                "\t\"args\": [\"oenTD5NOlXcaRvcLkqT_pzYlOs2g\", \"呐喊\", \"2018-08-20 20:52:51\", \"让我们红尘作伴活得潇潇洒洒\"],\n" +
+                "\t\"args\": [\"1\", \"呐喊\", \"2\", \"让我们红尘作伴活得潇潇洒洒\"],\n" +
                 "\t\"fcn\": \"invoke\",\n" +
                 "\t\"peers\": [\"peer0.org1.example.com\", \"peer1.org1.example.com\"]\n" +
                 "}";

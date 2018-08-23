@@ -12,7 +12,10 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.util.ResourceUtils;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Map;
 
 /**
@@ -85,7 +88,6 @@ public class TestController {
         }
     }
 
-
     @Test
     public void testAcGetId() {
         TiDB tiDB = TiDB.getTiDB(dbUtil);
@@ -100,4 +102,17 @@ public class TestController {
     }
 
     // acAddChain, user PostMan to send request.
+
+    @Test
+    public void testGetPath() {
+        File path = null;
+        try {
+            path = new File(ResourceUtils.getURL("classpath:").getPath());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        String gitPath = path.getParentFile().getParentFile().getParent() + File.separator + "logistics" + File.separator + "uploads" + File.separator;
+        log.info("Result: " + gitPath);
+    }
 }
